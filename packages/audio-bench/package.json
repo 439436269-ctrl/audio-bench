@@ -1,0 +1,44 @@
+{
+  "name": "audio-bench",
+  "version": "0.1.0",
+  "description": "Slice any browser-decodable audio into ASR-friendly mono 16 kHz WAV chunks. Zero dependencies, pure WebAudio.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "audio",
+    "asr",
+    "whisper",
+    "chunk",
+    "slice",
+    "wav",
+    "webaudio",
+    "16khz",
+    "transcription"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/439436269-ctrl/audio-bench.git",
+    "directory": "packages/audio-bench"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
